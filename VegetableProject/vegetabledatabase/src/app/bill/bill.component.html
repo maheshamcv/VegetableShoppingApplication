@@ -1,0 +1,32 @@
+<div align="center" >
+  <h2>Billing Record :</h2>
+    <table border="5" >
+    <thead >
+    <tr>
+        <th>ID </th>
+        <th> NAME </th>
+            <th>QUANTITY</th>
+            <th>COST</th>
+        
+    </tr>
+    
+    </thead>
+    <tbody >
+      <tr *ngFor="let veg of bill">
+        <td>{{veg.id}}</td>
+        <td>{{veg.name}}</td>
+        <td>{{veg.quantity}}</td>
+        <td>{{veg.cost}}</td>
+       
+        
+      </tr>  
+    </tbody>
+    
+    </table>
+    <div *ngFor="let veg of bill">
+    <h2>{{veg.name}} Vegetable cost :{{veg.cost}}</h2>
+  </div>
+    
+</div>
+
+    

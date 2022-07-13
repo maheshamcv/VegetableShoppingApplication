@@ -1,0 +1,12 @@
+<form #deleteform="ngForm" (ngSubmit)="deleterecord1(deleteform)">
+    
+    <div align="center">
+        <h2>Delete Vegetable  Record</h2>
+    <label>ID       : </label>
+    <input type="number" id="id" name="id" #id (ngModel)="id">
+    <br>
+    </div>
+    <div align="center">
+        <input type="submit" value="Delete">
+        </div>
+</form>
